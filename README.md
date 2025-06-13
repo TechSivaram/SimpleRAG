@@ -33,7 +33,7 @@ The purpose of this demo is to showcase the core RAG workflow:
 
 ## How it Works (Simplified)
 
-The `LimsRAGSystem` class orchestrates the RAG process:
+The `LimsRAGSystem` class (located within `Program.cs`) orchestrates the RAG process:
 
 1.  **`_knowledgeBase`:** A `Dictionary` holds pre-defined text chunks representing various LIMS documents and data.
 2.  **`GenerateSimpleEmbedding` (Dummy):** This method is a placeholder for a real embedding model. In a true RAG system, this would convert text into numerical vectors.
@@ -50,18 +50,11 @@ The `LimsRAGSystem` class orchestrates the RAG process:
 
 This project requires the [.NET SDK](https://dotnet.microsoft.com/download) to be installed on your system.
 
-1.  **Clone the repository (or copy the code):**
-
-    ```bash
-    git clone <repository-url> # Replace with your repo URL
-    cd <repository-directory>
-    ```
-
-    If you're just using the provided code, save it as `LimsRAG.cs` in a new directory.
+1.  **Place the code:**
+    Ensure the provided C# code (including the `LimsRAGSystem` class and the `Main` method) is saved as `Program.cs` in the root of your project directory.
 
 2.  **Navigate to the project directory:**
-
-    Open your terminal or command prompt and go to the directory where `LimsRAG.cs` is located.
+    Open your terminal or command prompt and go to the directory where `Program.cs` is located.
 
 3.  **Run the application:**
 
@@ -75,7 +68,7 @@ You will see the simulated RAG system processing various LIMS-related queries an
 
 ## Code Overview
 
-The core logic resides within the `LimsRAGSystem.cs` file (or `Program.cs` if you combined it).
+The core logic resides within the `Program.cs` file.
 
 * **`LimsRAGSystem` Class:** Encapsulates the entire RAG logic.
 * **`_knowledgeBase`:** `Dictionary<string, string>` holding demo data.
